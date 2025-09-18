@@ -1,2 +1,10 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
+@theme {
+  --color-fb-blue: #1877f2;
+  --color-fb-bg: #f0f2f5;
+  --color-fb-text: #050505;
+  --color-fb-gray: #65676b;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+}
