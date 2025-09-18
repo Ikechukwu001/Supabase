@@ -1,33 +1,5 @@
 import React from "react";
-
-const Post = ({ author, time, content, image }) => (
-  <div className="bg-white rounded-lg shadow p-4">
-    <div className="flex items-start gap-3">
-      <img
-        src={author.avatar}
-        alt={author.name}
-        className="w-10 h-10 rounded-full"
-      />
-      <div className="flex-1">
-        <p className="font-semibold text-sm">{author.name}</p>
-        <p className="text-xs text-gray-500">{time}</p>
-        <p className="mt-2 text-sm">{content}</p>
-        {image && (
-          <img
-            src={image}
-            alt=""
-            className="mt-3 rounded-lg max-h-96 w-full object-cover"
-          />
-        )}
-        <div className="flex justify-around mt-3 text-sm text-gray-600 border-t pt-2">
-          <button className="hover:text-fb-blue">👍 Like</button>
-          <button className="hover:text-fb-blue">💬 Comment</button>
-          <button className="hover:text-fb-blue">↗ Share</button>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+import Post from "./Post";
 
 export default function Dashboard({ user, onSignOut }) {
   const posts = [
